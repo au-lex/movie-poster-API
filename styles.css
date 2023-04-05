@@ -1,0 +1,114 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap'); 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.srch-box {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.srch-box input {
+    padding: .8rem 2rem;
+    width: 35rem;
+    outline: none;
+    border: none;
+    border-radius: 35px;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.9);
+    text-transform: capitalize;
+}
+
+input::placeholder {
+    font-size: 25px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.movies-container {
+
+    /* background-color: rgb(10, 0, 0); */
+    width: 300px;
+    height: 400px;
+    margin-top: 4rem;
+    /* margin-left: 3rem; */
+    padding: 1.2rem .9rem;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    
+
+}
+
+.movies-img {
+    width: 270px;
+    height: 270px;
+  
+}
+
+.movies-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgb(201, 181, 181);
+    width: 270px;
+    border-radius: 10px;
+    bottom: -30rem;
+    transition: .3s ease;
+    box-shadow: 5px 5p 20px 20px rgba(204, 199, 199, 1);
+}
+
+.tittle {
+    font-size: 25px;
+    text-transform: capitalize;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.sub-title {
+    padding-left: 1rem;
+    padding-top: .5rem;
+    text-transform: capitalize;
+    font-size: 15px;
+    color: rgb(206, 14, 36);
+}
+
+.text-desc {
+    padding-left: 1rem;
+    padding-top: .5rem;
+    font-size: 15px;
+    margin-bottom: 1rem;
+}
+.rate {
+    color: rgb(206, 14, 36);
+    position: absolute;
+    right: 1rem;
+    top: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+
+
+.movies-container:hover .overlay {
+    bottom: .2rem;
+   
+
+
+}
